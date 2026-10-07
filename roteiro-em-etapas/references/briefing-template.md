@@ -11,3 +11,5 @@
 | Limites (o que não prometer/afirmar) | |
 | Formato e duração | |
 | Guia de estilo a aplicar (versão) | |
+| Roteiro de referência para benchmark (texto completo, opcional) | |
+| Fontes fornecidas (links, documentos, anotações) | |

@@ -42,7 +42,17 @@ Antes de gerar texto, preencha com o usuário (pergunte só o que faltar; propon
 | Limites | O que não prometer ou afirmar |
 | Formato e duração | YouTube, tutorial, marketing, treinamento; minutos |
 
+Pergunte também, opcionalmente: **existe um roteiro de referência** (próprio ou de um canal que o usuário admira) para servir de benchmark? Se sim, peça o texto completo; um título ou ID não basta.
+
 Resuma o briefing em um bloco e peça confirmação. Modelo em `references/briefing-template.md`.
+
+## Portão de fontes (antes da estrutura)
+
+Antes da etapa 3, verifique se há material factual suficiente (anotações, dados, links, documentos do usuário):
+
+- **Há material:** siga o fluxo normal.
+- **Não há material e o tema depende de fatos** (história, ciência, números, datas, nomes): **pare** e ofereça duas saídas ao usuário: (a) ele fornece fontes, ou (b) você pesquisa antes de escrever as seções, citando as fontes encontradas. Título e introdução podem avançar; **seções com afirmações factuais não**.
+- **Se o usuário insistir em seguir sem fontes:** escreva, mas marque cada afirmação factual com `[VERIFICAR]` e liste-as ao final. Nunca preencha datas, números, nomes ou citações por memória sem esse rótulo.
 
 ## As oito etapas
 
@@ -63,11 +73,13 @@ As etapas 4 a 7 normalmente são executadas juntas, **seção por seção**, ao 
 
 1. **Título** → apresentar 5 opções, cada uma com a verificação "o vídeo cumpre essa promessa?". Aguardar escolha.
 2. **Introdução** → 3 versões; fazer a revisão crítica da escolhida (ver checklist de introdução abaixo); ajustar.
-3. **Estrutura** → listar seções com, para cada uma: dificuldade do público, pergunta em aberto, entrega (payoff) e transição. Aguardar aprovação.
-4. **Escrita por seção** → escrever uma seção, aplicar o checklist de revisão, mostrar, aguardar ajuste, seguir para a próxima.
-5. **CTA e encerramento** → propor chamada coerente com a entrega.
-6. **Revisão final** → leitura de ponta a ponta (ritmo, repetições, continuidade, números sem fonte).
-7. **Ciclo de feedback** → ver abaixo.
+3. **Portão de fontes** → conferir material factual (ver seção acima); parar e pedir fontes ou pesquisar se faltar.
+4. **Estrutura** → listar seções com, para cada uma: dificuldade do público, pergunta em aberto, entrega (payoff) e transição. Aguardar aprovação.
+5. **Escrita por seção** → escrever uma seção, aplicar o checklist de revisão, mostrar, aguardar ajuste, seguir para a próxima.
+6. **CTA e encerramento** → propor chamada coerente com a entrega.
+7. **Revisão final** → leitura de ponta a ponta (ritmo, repetições, continuidade, números sem fonte, itens `[VERIFICAR]` pendentes).
+8. **Comparação com referência** (se houver) → ver seção abaixo.
+9. **Ciclo de feedback** → ver abaixo.
 
 ## Elementos de cada seção
 
@@ -102,6 +114,25 @@ Exemplo (segurança digital): problema = reutilizar senhas expõe em vazamentos 
 - Concisão: algo repete o que já foi dito?
 
 Apresente a avaliação crítica ao usuário (pontos fortes, falhas, correções sugeridas) antes de avançar.
+
+## Comparação com roteiro de referência (opcional)
+
+Quando o usuário fornecer um roteiro de referência (benchmark), compare **depois da revisão final**, usando o texto completo. Se só houver título ou ID, diga que a comparação fica limitada à promessa do título e peça o texto.
+
+Compare, em tabela:
+
+| Aspecto | Roteiro gerado | Referência |
+|---|---|---|
+| Promessa do título e fidelidade da entrega | | |
+| Abertura (primeiros 30 s): problema, contraste ou ironia | | |
+| Estrutura: número de seções e ordem | | |
+| Payoff por seção | | |
+| Ganchos de transição | | |
+| Ritmo: tamanho das seções, repetições | | |
+| Tom e linguagem | | |
+| Evidência: o que é verificável e o que não é | | |
+
+Conclua com 3 a 5 ajustes concretos para o roteiro gerado. Não copie trechos da referência; extraia técnicas, não texto. Ajustes que o usuário aprovar podem alimentar o guia de estilo.
 
 ## Ciclo de feedback e guia de estilo
 
