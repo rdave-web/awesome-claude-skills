@@ -56,6 +56,12 @@ curl http://localhost:3456/api/jobs/<jobId>
 
 Agenda padrão após `npm start`: geração 06:00, fila de publicação a cada 15 min, analytics 09:00, otimização 22:00.
 
+## Roteiros em inglês, humanizados
+
+Os roteiros são gerados em inglês. Depois que a IA escreve o roteiro, `app/utils/script-humanizer.js` faz uma passada de humanização (padrões do skill `humanizer`: sem contrastes "não é X, é Y", sem fechamentos de efeito, sem travessões, sem vocabulário inflado, etc.) em título, gancho, seções e CTA. Fatos, números e a lista de `claims` não são alterados. Se a passada falhar ou mudar o formato, o roteiro original é mantido. Desative com `SCRIPT_HUMANIZER_ENABLED=false`. A lista completa de padrões está em `references/humanizer.md`.
+
+Ao revisar ou editar roteiros manualmente, use o skill `humanizer` do Claude e siga `references/humanizer.md`.
+
 ## Instruções para o Claude
 
 1. Nunca coloque chaves de API ou `credentials.json` em commits; só em `.env` / `config/` (já no `.gitignore`).

@@ -1,5 +1,6 @@
 const { Logger } = require('../utils/logger');
 const { AITextService } = require('../utils/ai-text-service');
+const { ScriptHumanizer } = require('../utils/script-humanizer');
 
 class ScriptWriterAgent {
   constructor(db, credentials) {
@@ -8,6 +9,7 @@ class ScriptWriterAgent {
     this.logger = new Logger('ScriptWriter');
     this.templates = this.loadTemplates();
     this.aiTextService = new AITextService(credentials?.credentials || credentials || {});
+    this.humanizer = new ScriptHumanizer(this.aiTextService);
   }
 
   async initialize() {
@@ -50,8 +52,9 @@ class ScriptWriterAgent {
       this.logger.info(`Generating script for: ${strategy.topic}`);
       
       const template = this.templates[strategy.contentType.toLowerCase()] || this.templates.explainer;
-      const aiScript = await this.generateScriptWithAI(strategy, template);
+      let aiScript = await this.generateScriptWithAI(strategy, template);
       if (aiScript) {
+        aiScript = await this.humanizer.humanize(aiScript);
         aiScript.fullScript = this.formatFullScript(aiScript);
         await this.db.saveScript(aiScript);
         this.logger.info(`Script generated with AI provider: ${aiScript.title}`);
@@ -107,6 +110,7 @@ class ScriptWriterAgent {
     }
 
     const prompt = `You are writing a YouTube script plan.
+Write the script in English, as natural spoken narration.
 Return only valid JSON with this exact shape:
 {
   "title": "compelling title under 100 characters",
